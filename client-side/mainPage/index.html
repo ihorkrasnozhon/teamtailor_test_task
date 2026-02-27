@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section id="welcome-screen" class="screen">
+    <div class="card">
+        <h1>Teamtailor Candidates</h1>
+        <p>Click to show and download candidates information</p>
+        <button id="fetch-btn" class="pink-button">FETCH DATA</button>
+    </div>
+</section>
+
+<section id="table-screen" class="screen hidden">
+    <div class="container card">
+        <header class="table-header">
+            <h2>Preview</h2>
+            <button id="back-btn" class="back-button">← BACK</button>
+        </header>
+
+        <div class="table-wrapper">
+            <table id="candidates-table">
+                <thead>
+                <tr>
+                    <th>Candidate`s ID</th>
+                    <th>Candidate`s name</th>
+                    <th>Email</th>
+                    <th>Application ID</th>
+                    <th>Application date</th>
+                </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+        <p class="auto-msg">CSV file generated and downloading</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

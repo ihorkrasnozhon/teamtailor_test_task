@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+:root {
+    --pink: #f43f85;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background: #fff5f8;
+    color: white;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+}
+
+.hidden {
+    display: none !important;
+    opacity: 0;
+}
+
+.card {
+    background: var(--pink);
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(244, 63, 133, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pink-button, .back-button {
+    background-color: white;
+    color: var(--pink);
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-transform: uppercase;
+}
+
+.back-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+}
+
+.pink-button:hover, .back-button:hover {
+    transform: scale(1.08);
+    background-color: #fff1f6;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.table-wrapper {
+    background: white;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+}
+
+thead {
+    background-color: #fce7f0;
+}
+
+th {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    color: var(--pink);
+    font-weight: 800;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 1rem;
+    border-bottom: 1px solid #fce7f0;
+    text-align: left;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #fff9fb;
+}
+
+.auto-msg {
+    margin-top: 2rem;
+    color: white;
+    font-style: italic;
+    font-weight: 400;
+    opacity: 0.9;
+}
